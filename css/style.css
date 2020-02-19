@@ -5,33 +5,28 @@ tab-port
 tab-land
 big-dt
 */
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit; 
+}
 
 html {
-  font-size: 62.5%; }
-  @media (max-width: 75em) {
-    html {
-      font-size: 56.25%; } }
-  @media (max-width: 56.25em) {
-    html {
-      font-size: 50%; } }
-  @media (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
+  font-size: 62.5%; /* equals 10px of 16px browser defaults */
+}
 
 body {
-    box-sizing: border-box;
-    padding: 3rem; 
+    
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.7;
     color: #777;
+    padding: 3rem; 
+    box-sizing: border-box;
 }
 @media (max-width: 56.25em) {
     body {
@@ -44,24 +39,38 @@ body {
     height: 95vh;
     background-image: linear-gradient(
         to right bottom, 
-        rgba(30, 115, 172, 0.9), 
-        rgba(142, 57, 153, 0.9)), 
-        url(https://media.giphy.com/media/cnQmEcmiKTuEfyJSiR/giphy.gif);
+        rgba(8, 31, 46, .8), 
+        rgba(46, 18, 49, .8)), 
+        url(https://media.giphy.com/media/NKEt9elQ5cR68/giphy.gif);
+
+    /* Gif background options:
+        flower pattern: https://media.giphy.com/media/cnQmEcmiKTuEfyJSiR/giphy.gif
+        animated worker: https://66.media.tumblr.com/7fbe4633d5adbac46013e3fe844a7cf3/tumblr_plmmu1vmaN1we9f2ro1_r1_500.gifv
+        city loop: https://media.giphy.com/media/WqFqAGOStn4AD4ZK8G/giphy.gif
+        anime city: https://media.giphy.com/media/NKEt9elQ5cR68/giphy.gif
+        animated city: https://66.media.tumblr.com/4a6d21149a2fafe16ed43384144df8f2/tumblr_okdcwuklM71vm8ltno1_500.gif
+        another animated city: https://66.media.tumblr.com/fad394d48eef73d55dc8ca6bce407f01/tumblr_p2gbtkAQKw1wk0ifjo1_500.gif
+    
+        rgba(30, 115, 172, 0.8), 
+        rgba(142, 57, 153, 0.9)
+
+        */
+
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     position: relative;
 
-    clip-path: polygon(0 0, 100% 0%, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
 }
 
 .logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 }
 
 .logo {
-    height: 35px;
+    height: 3.5rem;
 }
 
 .text-box {
@@ -78,7 +87,7 @@ body {
 
     /* Prevents heading animation shaking */
     backface-visibility: hidden;
-    margin-bottom: 60px;
+    margin-bottom: 2rem;
 }
 
 .heading-primary-main {
@@ -86,7 +95,7 @@ body {
     line-height: 1.3;
     font-size: 6.5rem;
     font-weight: 400;
-    letter-spacing: 0.6rem;
+    letter-spacing: .6rem;
 
     animation-name: moveInLeft;
     animation-duration: 1s;
@@ -103,7 +112,7 @@ body {
     display: block;
     font-size: 2.2rem;
     font-weight: 400;
-    letter-spacing: 0.3rem;
+    letter-spacing: .3rem;
 
     animation: moveInRight 1s ease-out;
 
@@ -115,11 +124,11 @@ body {
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
 
     80% {
-        transform: translateX(10px);
+        transform: translateX(1rem);
     }
 
     100% {
@@ -131,11 +140,11 @@ body {
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
     }
 
     80% {
-        transform: translateX(-10px);
+        transform: translateX(-1rem);
     }
 
     100% {
@@ -147,7 +156,7 @@ body {
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(3rem);
     }
 
     100% {
@@ -160,21 +169,21 @@ body {
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: transform .2s, box-shadow .2s; /* cannot use 'all' due to chrome bug */
     position: relative;
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
 }
 
 .btn:active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
 
 .btn-white {
@@ -187,7 +196,7 @@ body {
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: absolute;
     top: 0;
     left: 0;
