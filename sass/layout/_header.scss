@@ -1,0 +1,45 @@
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-primary-light, .8), 
+        rgba($color-primary-dark, .8)), 
+        url(https://media.giphy.com/media/NKEt9elQ5cR68/giphy.gif);
+
+        /* Gif background options:
+            flower pattern: https://media.giphy.com/media/cnQmEcmiKTuEfyJSiR/giphy.gif
+            animated worker: https://66.media.tumblr.com/7fbe4633d5adbac46013e3fe844a7cf3/tumblr_plmmu1vmaN1we9f2ro1_r1_500.gifv
+            city loop: https://media.giphy.com/media/WqFqAGOStn4AD4ZK8G/giphy.gif
+            anime city: https://media.giphy.com/media/NKEt9elQ5cR68/giphy.gif
+            animated city: https://66.media.tumblr.com/4a6d21149a2fafe16ed43384144df8f2/tumblr_okdcwuklM71vm8ltno1_500.gif
+            another animated city: https://66.media.tumblr.com/fad394d48eef73d55dc8ca6bce407f01/tumblr_p2gbtkAQKw1wk0ifjo1_500.gif
+        
+            rgba(30, 115, 172, 0.8), 
+            rgba(142, 57, 153, 0.9)
+
+            */
+
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 3.5rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
