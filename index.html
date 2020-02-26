@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ceviche+One|Press+Start+2P&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
@@ -15,14 +16,14 @@
     <body>
         <header class="header">
             <div class="header__logo-box">
-                <img src="img/logo-white.png" alt="Logo" class="header__logo" />
+                <p class="header__logo">KG.</p>
             </div>
             <div class="header__text-box">
                 <h1 class="heading-primary">
                     <span class="heading-primary--main">Kevin Gilpin</span>
                     <span class="heading-primary--sub">Front End Engineer</span>
                 </h1>
-                <a href="#" class="btn btn--white btn--animated">See Projects</a>
+                <a href="#projects" class="btn btn--white btn--animated">See Projects</a>
             </div>
         </header>
 
@@ -50,59 +51,71 @@
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
-                            <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                            <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                            <img src="img/javascript.png" alt="Photo 1" class="composition__photo composition__photo--p1">
+                            <img src="img/nodejs.png" alt="Photo 2" class="composition__photo composition__photo--p2">
+                            <img src="img/react.png" alt="Photo 3" class="composition__photo composition__photo--p3">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section-features">
+            <section class="section-skills">
                 <div class="row">
                     <div class="col-1-of-4">
                         <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-world"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus repudiandae tempore dolorum delectus.
-                            </p>
+                            <i class="feature-box__icon icon-basic-webpage"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Front End</h3>
+                            <ul class="feature-box__skills-list">
+                                <li>HTML5</li>
+                                <li>CSS3 | SASS</li>
+                                <li>JavaScript</li>
+                                <li>React | Redux</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-1-of-4">
                         <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-compass"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Meet Nature</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus repudiandae tempore dolorum delectus.
-                            </p>
+                            <i class="feature-box__icon icon-basic-share"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Backend</h3>
+                            <ul class="feature-box__skills-list">
+                                <li>NodeJS</li>
+                                <li>Express</li>
+                                <li>Python</li>
+                                <li>Django</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-1-of-4">
                         <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-map"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Find Your Way</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus repudiandae tempore dolorum delectus.
-                            </p>
+                            <i class="feature-box__icon icon-basic-server2"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Database</h3>
+                            <ul class="feature-box__skills-list">
+                                <li>PostgreSQL</li>
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                                <li>Cassandra</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-1-of-4">
                         <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-heart"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Live a healthier life</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus repudiandae tempore dolorum delectus.
-                            </p>
+                            <i class="feature-box__icon icon-basic-cloud"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Systems</h3>
+                            <ul class="feature-box__skills-list">
+                                <li>Systems Design</li>
+                                <li>AWS ECS | SQS</li>
+                                <li>Docker</li>
+                                <li>Git</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section-tours">
-                <div class="u-center-text u-margin-bottom-big">
+            <section class="section-projects">
+                <div class="u-center-text u-margin-bottom-big" id="projects">
                     <h2 class="heading-secondary">
-                        Portfolio Projects
+                        Project Portfolio
                     </h2>
                 </div>
 
@@ -130,7 +143,7 @@
                                     <div class="card__demo-box">
                                         <p class="card__description">Open-Source<br/ >Deployable web application that allows users to view private tableau worksheets without requiring a paid viewer account.</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Source Code</a>
+                                    <a href="#popup" class="btn btn--white">Source Code</a>
                                 </div>
                             </div>
                         </div>
@@ -158,7 +171,7 @@
                                     <div class="card__demo-box">
                                         <p class="card__description">Full-stack slack clone chat application.</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Demo</a>
+                                    <a href="#popup" class="btn btn--white">Demo</a>
                                 </div>
                             </div>
                         </div>
@@ -186,7 +199,7 @@
                                     <div class="card__demo-box">
                                         <p class="card__description">Full-stack web application to share random thoughts with followers.</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Demo</a>
+                                    <a href="#popup" class="btn btn--white">Demo</a>
                                 </div>
                             </div>
                         </div>
@@ -195,74 +208,46 @@
             </section>
         </main>
 
-        <!--
-        <section class="grid-test">
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <p class="footer__logo">KG.</p>
+            </div>
             <div class="row">
                 <div class="col-1-of-2">
-                    Col 1 of 2
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">Github</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">LinkedIn</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">StackOverflow</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">CodePen</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Resume</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-1-of-2">
-                    Col 1 of 2
+                    <p class="footer__copyright">
+                        Site built by <a href="#" class="footer__link">KG</a>
+                    </p>
                 </div>
             </div>
+        </footer>
 
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
                 </div>
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-2-of-3">
-                    Col 2 of 3
+                <div class="popup__right">
+                    <a href="#popup-close" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Project Demo Page</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Live Demo Link</h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur blanditiis tenetur, dicta corporis error nemo reprehenderit id, exercitationem saepe dolorum placeat rerum distinctio a deserunt culpa consectetur veritatis, eos accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores minima ut fugit earum tempore. Ut iusto inventore tempore sit quis voluptate corrupti possimus repudiandae sequi? Vero veniam adipisci impedit quos.
+                    </p>
+                    <a href="#" class="btn btn--primary">View Source Code</a>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-2-of-4">
-                    Col 2 of 4
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-3-of-4">
-                    Col 3 of 4
-                </div>
-            </div>
-        </section>
-        -->
+        </div>
     </body>
 </html>

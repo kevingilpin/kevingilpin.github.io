@@ -3,7 +3,7 @@ body {
     font-weight: 400;
     font-size: $default-font-size;
     line-height: 1.7;
-    color: $color-grey-dark;
+    color: $color-grey-dark-1;
 }
 
 .heading-primary {
@@ -17,6 +17,7 @@ body {
     &--main {
         display: block;
         line-height: 1.3;
+        font-family: 'Press Start 2P', "Lato", sans-serif;
         font-size: 6.5rem;
         font-weight: 400;
         letter-spacing: .6rem;
@@ -59,8 +60,8 @@ body {
     transition: all .2s;
 
     &:hover {
-        transform: skewY(2deg) skewX(15deg) scale(1.1);
-        text-shadow: .5rem 1rem 2rem rgba($color-black, .2)
+        transform: skewY(1deg) skewX(2deg);
+        text-shadow: 1rem 1rem 2rem rgba($color-black, .2)
     }
 }
 
